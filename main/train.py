@@ -189,7 +189,7 @@ earlystop = keras.callbacks.EarlyStopping(monitor='loss', min_delta=3, patience=
 
 batch_size = 16
 step_epoch = 200
-combined.fit_generator(
+combined.fit(
         data_loader.load_data(batch_size),
         steps_per_epoch=step_epoch,
         epochs=200,
