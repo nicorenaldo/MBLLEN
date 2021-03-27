@@ -22,7 +22,7 @@ class Dataloader():
         cv.imwrite(path, img_rgb)
 
     def load_data(self, batch_size=16):
-        path = glob('../dataset/train/*.jpg')
+        path = glob('../dataset/train/low/*.jpg')
         self.n_batches = int(len(path) / batch_size)
         while 1:
             random.shuffle(path)

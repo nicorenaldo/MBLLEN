@@ -125,7 +125,7 @@ class Show_History(keras.callbacks.Callback):
         mbllen.save_weights(modelname)
 
         # test val data
-        path = glob('../dataset/test/*.jpg')
+        path = glob('../dataset/eval/low/*.jpg')
         number = 0
         psnr_ave = 0
 
